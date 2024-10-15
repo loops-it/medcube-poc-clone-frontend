@@ -52,7 +52,7 @@ const ChatBox = () => {
 
         try {
             // Use localhost URL
-            const res = await fetch('http://localhost:3001/upload', {
+            const res = await fetch('https://medcube-poc-clone-backend-ge1asih2o-ai-assistant-s-team.vercel.app/upload', {
                 method: 'POST',
                 body: formData,
             });
