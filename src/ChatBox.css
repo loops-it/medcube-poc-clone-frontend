@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.chatbox-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    height: 700px; /* Set the height of the entire chatbox */
+    border: 1px solid #e1e1e1;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+    margin: 20px auto;
+
+}
+
+.chatbox-header {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background-color: #0078d4;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    border-bottom: 1px solid #ccc;
+}
+
+.compose-icon {
+    cursor: pointer;
+}
+
+.chatbox-body {
+    padding: 20px;
+    flex: 1; /* This allows the chat body to expand and take up available space */
+    overflow-y: auto;
+    background-color: #f9f9f9;
+}
+
+.chatbox-footer {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+.input-section {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.message-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    font-size: 14px;
+    margin-right: 10px;
+    outline: none;
+}
+
+.message-input:focus {
+    border-color: #0078d4;
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #555;
+    margin-left: 8px;
+    transition: color 0.3s;
+}
+
+.icon-button:hover {
+    color: #0078d4;
+}
+
+.send-button {
+    background-color: #0078d4;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.send-button.disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
+
+.send-button:not(.disabled):hover {
+    background-color: #0056b3;
+}
+
